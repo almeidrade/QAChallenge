@@ -1,0 +1,22 @@
+package steps;
+
+import java.util.concurrent.TimeUnit;
+import io.cucumber.java.en.When;
+import pages.ContactUsPage;
+import pages.HomePage;
+import pages.LoginPage;
+
+public class WhenSteps {
+	@When("the user navigates to the login page")
+	public void the_user_navigate_to_the_login_page() throws InterruptedException, Throwable {
+		TimeUnit.SECONDS.sleep(2); //added explicit sleeping to make it better viewing	
+	}
+	
+	@When("the user select an option in dropdown list")
+	public void the_user_select_an_option_in_the_list() throws InterruptedException {
+		TimeUnit.SECONDS.sleep(2); //added explicit sleeping to make it better viewing	
+		ContactUsPage.SelectSubjectHeadingList("1");
+	}
+	
+	
+}

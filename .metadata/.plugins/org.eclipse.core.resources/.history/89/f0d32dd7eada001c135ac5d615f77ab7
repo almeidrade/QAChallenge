@@ -1,0 +1,11 @@
+package steps;
+
+import io.cucumber.java.en.Then;
+import pages.ContactUsPage;
+
+public class ThenSteps {
+	@Then("then the message {string} is displayed to the customer")
+	public void then_the_message_is_displayed_to_the_customer(String messageSuccess) {
+	    ContactUsPage.validateFormSendingSuccess(Success);
+	}
+}

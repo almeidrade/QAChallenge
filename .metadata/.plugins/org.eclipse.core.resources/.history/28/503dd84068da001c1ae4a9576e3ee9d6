@@ -1,0 +1,19 @@
+package steps;
+
+import java.util.concurrent.TimeUnit;
+import io.cucumber.java.en.When;
+import pages.ContactUsPage;
+import pages.HomePage;
+import pages.LoginPage;
+
+public class WhenSteps {
+	@When("the user navigates to the login page")
+	public void the_user_navigate_to_the_login_page() throws InterruptedException, Throwable {
+		TimeUnit.SECONDS.sleep(2); //added the explicitly sleeping in order to turn it better viewing		
+	}
+	
+	@When("^the user select (.*)$ in dropdown list")
+	public void the_user_is_in_the_home_page(String listOption) {
+		ContactUsPage.SelectSubjectHeadingList(listOption);
+	}
+}

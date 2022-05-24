@@ -1,0 +1,7 @@
+#QA CHALLENGE
+
+## Environment Setup
+	- Make sure to download all the Maven Dependencies before running the project.
+	- Required Java 8 or more recent (this particular framework os developed based on the version 1.8.0_261
+	- Environment Variables must be set up
+	

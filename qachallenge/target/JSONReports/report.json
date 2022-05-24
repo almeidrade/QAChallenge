@@ -1,0 +1,350 @@
+[
+  {
+    "line": 6,
+    "elements": [
+      {
+        "line": 8,
+        "name": "User navigate to the login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3163739300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the browser is opened",
+            "match": {
+              "location": "steps.GivenSteps.the_browser_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6972683300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user is in the home page",
+            "match": {
+              "location": "steps.AndSteps.the_user_is_in_home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-24T02:41:59.324Z",
+        "line": 13,
+        "name": "User fills the in an improper way",
+        "description": "",
+        "id": "feature-to-test-form-page-funcionality;user-fills-the-in-an-improper-way",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1603720400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user navigates to the contact form page",
+            "match": {
+              "location": "steps.GivenSteps.the_user_navigate_to_the_contact_form_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 315286300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "does not fill all text fields properly",
+            "match": {
+              "location": "steps.AndSteps.does_not_fill_all_text_fields_properly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1035612600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user clicks the submit button",
+            "match": {
+              "location": "steps.WhenSteps.the_user_clicks_the_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3827786700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "then the \"error\" message \"There is 1 error\" is displayed to the customer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"error\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"There is 1 error\"",
+                  "offset": 25
+                }
+              ],
+              "location": "steps.ThenSteps.then_the_message_is_displayed_to_the_customer(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@contacFormError"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User navigate to the login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1687187800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the browser is opened",
+            "match": {
+              "location": "steps.GivenSteps.the_browser_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7039968600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user is in the home page",
+            "match": {
+              "location": "steps.AndSteps.the_user_is_in_home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-24T02:42:16.392Z",
+        "line": 20,
+        "name": "User fills the form with invalid email",
+        "description": "",
+        "id": "feature-to-test-form-page-funcionality;user-fills-the-form-with-invalid-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3741284400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user navigates to the contact form page",
+            "match": {
+              "location": "steps.GivenSteps.the_user_navigate_to_the_contact_form_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 291160100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "and fills the email field in an invalid way",
+            "match": {
+              "location": "steps.WhenSteps.and_fills_the_email_field_in_an_invalid_way()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3827310500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the email field is highlited warning an error",
+            "match": {
+              "location": "steps.ThenSteps.the_email_field_is_highlited_warning_an_error()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@contacFormErrorEmail"
+          }
+        ]
+      }
+    ],
+    "name": "Feature to test Form Page funcionality",
+    "description": "",
+    "id": "feature-to-test-form-page-funcionality",
+    "keyword": "Feature",
+    "uri": "file:src/specifications/ContactFormError.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 6,
+    "elements": [
+      {
+        "line": 8,
+        "name": "User navigate to the login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1661490200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the browser is opened",
+            "match": {
+              "location": "steps.GivenSteps.the_browser_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7232960800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user is in the home page",
+            "match": {
+              "location": "steps.AndSteps.the_user_is_in_home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-24T02:42:32.990Z",
+        "line": 13,
+        "name": "User fills the form Submit Error",
+        "description": "",
+        "id": "feature-to-test-form-page-funcionality;user-fills-the-form-submit-error",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3302624200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user navigates to the contact form page",
+            "match": {
+              "location": "steps.GivenSteps.the_user_navigate_to_the_contact_form_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2731709300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "fills all text fields properly",
+            "match": {
+              "location": "steps.AndSteps.fills_all_text_fields_properly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1396968000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user clicks the submit button",
+            "match": {
+              "location": "steps.WhenSteps.the_user_clicks_the_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3820393300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "then the \"success\" message \"Your message has been successfully sent to our team.\" is displayed to the customer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"success\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"Your message has been successfully sent to our team.\"",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.ThenSteps.then_the_message_is_displayed_to_the_customer(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@contacFormSuccess"
+          }
+        ]
+      }
+    ],
+    "name": "Feature to test Form Page funcionality",
+    "description": "",
+    "id": "feature-to-test-form-page-funcionality",
+    "keyword": "Feature",
+    "uri": "file:src/specifications/ContactFormSuccess.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+package steps;
+
+import java.util.concurrent.TimeUnit;
+import io.cucumber.java.en.When;
+import pages.ContactUsPage;
+import pages.HomePage;
+
+public class WhenSteps {
+	@When("the user navigates to the login page")
+	public void the_user_navigate_to_the_login_page() throws InterruptedException, Throwable {
+		TimeUnit.SECONDS.sleep(2); //added explicit sleeping to make it better viewing	
+	}
+	
+	@When("the user clicks the submit button")
+	public void the_user_clicks_the_submit_button() {
+		ContactUsPage.clickSubimit();
+	}
+}

@@ -1,0 +1,14 @@
+package steps;
+
+import java.util.concurrent.TimeUnit;
+import io.cucumber.java.en.Then;
+import pages.HomePage;
+
+public class ThenSteps {
+	@Then("then the message {string} is displayed to the customer")
+	public void then_the_message_is_displayed_to_the_customer(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}

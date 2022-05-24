@@ -1,0 +1,14 @@
+package steps;
+
+import java.util.concurrent.TimeUnit;
+import io.cucumber.java.en.Then;
+import pages.HomePage;
+
+public class ThenSteps {
+	@Then("^user is navigated to the logged home page")
+	public void user_is_navigated_to_the_logged_home_page() throws InterruptedException, Throwable {
+		TimeUnit.SECONDS.sleep(2); //added the explicitly sleeping just to turn it better in the actions viewing
+		HomePage.ValidateLoggedHomePage();
+	}
+
+}

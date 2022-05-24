@@ -1,0 +1,21 @@
+package steps;
+
+import base.TestBase;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import pages.HomePage;
+
+public class GivenSteps extends TestBase {
+	
+	@Given("the browser is opened")
+	public void the_browser_is_opened() throws Throwable {
+		SetDriverType(DriverType.WEB, FrontEndType.CHROME);			
+	}
+	
+	@And("the user is in the home page")
+	public void the_user_is_in_home_page() throws Throwable {
+		HomePage.NavigateToHomePage();				
+	}
+	
+	
+}

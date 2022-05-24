@@ -1,0 +1,17 @@
+# encoding: utf-8
+# Author
+# Date
+# Description
+Feature: Feature to test Form Page funcionality
+
+  Background: User navigate to the login page
+    Given the browser is opened
+    And the user is in the home page
+  
+  @contacFormError @regression
+  Scenario: User fills the form Success
+    Given the user navigates to the contact form page
+    And selects an option in dropdown list
+    And does not fill all text fields properly
+    When the user clicks the submit button
+    Then then the "error" message "There is 1 error" is displayed to the customer

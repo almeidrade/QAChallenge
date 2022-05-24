@@ -1,0 +1,16 @@
+package steps;
+
+import java.util.concurrent.TimeUnit;
+
+import base.TestRunner;
+import io.cucumber.java.en.Then;
+import pages.ContactUsPage;
+
+public class ThenSteps {
+	@Then("then the message {string} is displayed to the customer")
+	public void then_the_message_is_displayed_to_the_customer(String messageSuccess) throws Throwable {
+	    ContactUsPage.ValidateMessageSent(messageSuccess);
+	    TimeUnit.SECONDS.sleep(3); //added explicit sleeping to make it better viewing
+	    TestRunner.TestCleanup();
+	}	
+}

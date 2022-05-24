@@ -1,0 +1,73 @@
+package pages;
+import org.openqa.selenium.By;
+import base.Helpers;
+import base.TestBase;
+import static org.junit.Assert.*;
+import java.io.IOException;
+import java.util.Properties;
+
+public class HomePage extends TestBase{			
+	
+	/*---------------------------------ELEMENTS---------------------------------*/ 
+	public static By btnContactUs() {
+		return By.id("contact-link");
+	}
+	
+	
+	
+	
+	public static String ddlEntrar() {
+		String xpath = "qa-automation='home-account-button'";
+		return xpath;
+	}	
+	
+	public static By linkTextLogin(String text) {
+		return By.linkText(text);
+	}	
+	
+	public static By ddlUserNameLogged() {
+		return By.id("username-logged");
+	}
+	
+	public static By txtError() {
+		return By.id("errors-wrapper");
+	}
+	
+	
+	/*---------------------------------ACTIONS---------------------------------*/	
+	public static void NavigateToHomePage() throws IOException {
+		Properties url = getProperty();
+		Helpers.NavigateTo(url.getProperty("automationPractice"));		
+	}
+	
+	public static void ClickContactFormPage() {
+		Helpers.Click(btnContactUs());
+	}
+
+	
+	
+	
+	
+	public static void HoverEntrar() {
+		Helpers.HoverElement(ddlEntrar());
+	}
+	
+	public static void SelectLogin(String text) {
+		Helpers.Click(linkTextLogin(text));
+	}
+	
+	public static String GetTextUsername() throws Throwable {
+		return Helpers.GetText(ddlUserNameLogged());
+	}
+	
+	public static String GetErrorShown() throws Throwable {
+		return Helpers.GetText(txtError());
+	}
+	
+	
+	/*---------------------------------BEHAVIORS---------------------------------*/
+	public static void NavigateToHomePage(String text) {
+		HoverEntrar();
+		SelectLogin(text);
+	}
+}

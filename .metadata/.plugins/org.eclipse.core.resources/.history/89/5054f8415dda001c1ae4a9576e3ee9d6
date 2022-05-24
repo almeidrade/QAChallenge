@@ -1,0 +1,32 @@
+package steps;
+
+import java.util.concurrent.TimeUnit;
+
+import base.TestBase;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import pages.ContactUsPage;
+import pages.HomePage;
+import pages.LoginPage;
+
+public class GivenSteps extends TestBase {
+	
+	@Given("the browser is opened")
+	public void the_browser_is_opened() throws Throwable {
+		SetDriverType(DriverType.WEB, FrontEndType.CHROME);			
+	}
+	
+	@Given("the user navigates to the contact form page")
+	public void the_user_navigate_to_the_contact_form_page() throws Throwable {
+		HomePage.ClickContactFormPage();
+		ContactUsPage.ValidateLoggedContactUsPage("CUSTOMER SERVICE - CONTACT US");
+	}
+	
+	
+	
+	@Given("^the user enters valid (.*) and (.*)$")
+	public void the_user_enters_valid_username_and_password(String username, String password) throws InterruptedException, Throwable{
+		TimeUnit.SECONDS.sleep(2); //add the explicitly sleeping just to turn it better viewing
+		LoginPage.EnterUserAndPass(username, password);
+	}	
+}

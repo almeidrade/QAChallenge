@@ -1,0 +1,11 @@
+package steps;
+
+import base.TestBase;
+import io.cucumber.java.en.Given;
+
+public class GivenSteps extends TestBase {
+	@Given("the browser is opened")
+	public void the_browser_is_opened() throws Throwable {
+		SetDriverType(DriverType.WEB, FrontEndType.CHROME);			
+	}
+}

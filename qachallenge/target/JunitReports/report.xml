@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="54.108">
+    <testcase classname="Feature to test Form Page funcionality" name="User fills the in an improper way" time="17.057">
+        <system-out><![CDATA[Given the browser is opened.................................................passed
+And the user is in the home page............................................passed
+Given the user navigates to the contact form page...........................passed
+And does not fill all text fields properly..................................passed
+When the user clicks the submit button......................................passed
+Then then the "error" message "There is 1 error" is displayed to the customer.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Feature to test Form Page funcionality" name="User fills the form with invalid email" time="16.59">
+        <system-out><![CDATA[Given the browser is opened.................................................passed
+And the user is in the home page............................................passed
+Given the user navigates to the contact form page...........................passed
+When and fills the email field in an invalid way............................passed
+Then the email field is highlited warning an error..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Feature to test Form Page funcionality" name="User fills the form Submit Error" time="20.154">
+        <system-out><![CDATA[Given the browser is opened.................................................passed
+And the user is in the home page............................................passed
+Given the user navigates to the contact form page...........................passed
+And fills all text fields properly..........................................passed
+When the user clicks the submit button......................................passed
+Then then the "success" message "Your message has been successfully sent to our team." is displayed to the customer.passed
+]]></system-out>
+    </testcase>
+</testsuite>
