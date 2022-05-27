@@ -1,0 +1,35 @@
+package base;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.java.AfterAll;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features="src/specifications",
+		glue = {"steps"},
+		monochrome = true,
+		plugin = {"pretty", 
+				  "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+				  "html:target/HtmlReports/report.html",
+				  "junit:target/JunitReports/report.xml",
+				  "json:target/JSONReports/report.json"},
+		tags = "@regression")
+
+public class TestRunner extends TestBase {
+	
+	@AfterAll
+    public static void endSelenium(){
+        driver.close();
+        try{
+            driver.quit();
+        }catch (Exception e){
+            System.out.println("Browser closed already, " +
+                            "did not need to quit after all");
+            e.printStackTrace();
+        }
+    }
+
+}

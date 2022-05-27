@@ -2,7 +2,7 @@ package pages;
 import org.openqa.selenium.By;
 import base.Helpers;
 import base.TestBase;
-import static org.junit.Assert.*;
+//import static org.junit.Assert.*;
 import java.io.IOException;
 import java.util.Properties;
 

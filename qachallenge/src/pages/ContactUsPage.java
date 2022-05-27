@@ -1,7 +1,7 @@
 package pages;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.openqa.selenium.By;
 import base.Helpers;
 import base.TestBase;
@@ -84,8 +84,8 @@ public class ContactUsPage extends TestBase {
 	
 	public static void validateEmailFail() throws InterruptedException {
 		int timeoutSeconds = 5;
-		assertTrue(Helpers.ElementExists(chkEmailNotOk(), timeoutSeconds));
-	}
+		assertTrue(Helpers.ElementExists(chkEmailNotOk(), timeoutSeconds)); 
+		}
 	
 	public static void inputFileToForm(String fileLocation) {
 		Helpers.AttachFileToWebPage(iptFileElememt(), fileLocation);
@@ -112,7 +112,7 @@ public class ContactUsPage extends TestBase {
 	
 	public static void validateMessageSent(String typeMessage, String expectedMessage) throws Throwable {				
 		if (typeMessage.equals("success")) {
-			assertEquals(expectedMessage, getMessageSentSuccess());
+			 assertEquals(expectedMessage, getMessageSentSuccess());
 		} else {
 			assertEquals(expectedMessage, getMessageSentError());
 		}		

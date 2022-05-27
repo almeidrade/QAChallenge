@@ -1,0 +1,42 @@
+package base;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
+import io.cucumber.java.Before;
+
+public class Hooks {
+	@BeforeClass
+    public static void runBeforeClass()
+    {
+
+    }
+
+    @AfterClass
+    public static void runAfterClass()
+    {  
+
+    }
+
+    @Before  
+    public void setUp()
+    {
+
+    }
+
+    @AfterAll
+    public void tearDown()
+    {
+    	
+    }
+
+    @Test
+    public void testSomethingOrOther()
+    {
+    	
+    }
+
+}

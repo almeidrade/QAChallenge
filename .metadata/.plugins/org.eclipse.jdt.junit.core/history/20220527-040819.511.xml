@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="qachallenge" project="qachallenge" tests="3" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="base.TestRunner" incomplete="true">
+    <testsuite name="Feature to test Form Page funcionality #1" incomplete="true">
+      <testcase name="User fills the in an improper way" classname="Feature to test Form Page funcionality #1" time="77.765">
+        <error>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 50.000
+  (Session info: chrome=102.0.5005.63)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-NQH2IHK', ip: '192.168.184.171', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1032875c5f688604d04a34ce929a16bb, clickElement {id=e35964ef-63bb-4fbb-aac9-0120375eedd8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\PCGAME~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60900}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60900/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1032875c5f688604d04a34ce929a16bb)] -&gt; id: submitMessage]
+Session ID: 1032875c5f688604d04a34ce929a16bb&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)&#13;
+	at base.Helpers.Click(Helpers.java:10)&#13;
+	at pages.ContactUsPage.clickSubimit(ContactUsPage.java:77)&#13;
+	at steps.WhenSteps.the_user_clicks_the_submit_button(WhenSteps.java:17)&#13;
+	at ✽.the user clicks the submit button(file:///C:/Users/PC%20Gamer/Workspace/QAChallenge/qachallenge/src/specifications/ContactFormError.feature:16)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="User fills the form with invalid email" classname="Feature to test Form Page funcionality #1" incomplete="true"/>
+    </testsuite>
+    <testsuite name="Feature to test Form Page funcionality #2" incomplete="true">
+      <testcase name="User fills the form Submit Error" classname="Feature to test Form Page funcionality #2" incomplete="true"/>
+    </testsuite>
+  </testsuite>
+</testrun>

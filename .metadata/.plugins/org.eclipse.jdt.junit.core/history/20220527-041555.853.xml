@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="qachallenge" project="qachallenge" tests="3" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="base.TestRunner" incomplete="true">
+    <testsuite name="Feature to test Form Page funcionality #1" time="24.469">
+      <testcase name="User fills the in an improper way" classname="Feature to test Form Page funcionality #1" time="12.677"/>
+      <testcase name="User fills the form with invalid email" classname="Feature to test Form Page funcionality #1" time="11.791"/>
+    </testsuite>
+    <testsuite name="Feature to test Form Page funcionality #2" incomplete="true">
+      <testcase name="User fills the form Submit Error" classname="Feature to test Form Page funcionality #2" incomplete="true"/>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,13 @@
+package base;
+
+import io.cucumber.java.AfterAll;
+
+public class Hooks extends TestBase {
+	
+	@AfterAll
+    public static void endSelenium(){
+		driver.close();
+		driver.quit();
+    }
+
+}

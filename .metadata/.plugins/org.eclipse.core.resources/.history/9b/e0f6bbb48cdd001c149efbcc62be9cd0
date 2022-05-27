@@ -1,0 +1,15 @@
+package base;
+
+import org.junit.After;
+import org.junit.jupiter.api.AfterEach;
+
+public class Hooks extends TestBase {   
+    
+	@AfterEach
+    public void tearDown()
+    {
+		
+    	driver.close();
+		driver.quit();
+    }
+}
